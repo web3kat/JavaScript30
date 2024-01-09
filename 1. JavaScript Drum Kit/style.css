@@ -52,3 +52,21 @@ kbd {
     letter-spacing: .1rem;
     text-transform: uppercase;
 }
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: #D3D3D3;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
