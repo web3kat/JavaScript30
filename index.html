@@ -8,6 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kat's Repo for Days of Code Challenge 2024</title>
     <style>
+        body {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         header {
             padding: 20px;
         }
@@ -17,10 +29,58 @@
             padding: 50px 20px;
         }
 
-        footer {
-            bottom: 0;
+        .card {
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            border-radius: 5px;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+            transition: all 0.2s ease-in;
+        }
+
+        .card:hover {
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+            transition: all 0.2s ease-in;
+        }
+
+        .card .image-box {
+            border-radius: 5px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+            overflow: hidden;
+        }
+
+        .card .image-box img {
+            -webkit-transition: all .9s ease;
+            -moz-transition: all .9s ease;
+            -o-transition: all .9s ease;
+            -ms-transition: all .9s ease;
+        }
+
+        .card:hover .image-box img {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .card-body {
+            border-radius: 5px;
+            color: var(--primary-color);
             padding: 20px;
-            position: fixed;
+        }
+
+        footer {
+            align-self: end;
+            font-size: 10px;
+            padding: 10px;
+            position: relative;
+            width: 100%;
         }
     </style>
 </head>
@@ -33,12 +93,34 @@
     </header>
 
     <main>
-        <div class="row w-100">
-            <div class="col-3 col-sm-1">
-                Day 1:
-            </div>
-            <div class="col-9 col-sm-11">
-                <a href="./01 - JavaScript Drum Kit/index.html" target="_blank">JavaScript Drum Kit</a>
+        <div id="project-container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <a href="https://katmohd.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/" target="_blank">
+                        <div class="card h-100 mb-3">
+                            <div class="image-box">
+                                <img src="./projects/day1.png" class="card-img-top"
+                                    alt="golden Lord Murugan statue at Batu Caves">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Day 1: JS Drum Kit</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://katmohd.github.io/JavaScript30/02%20-%20JS%20and%20CSS%20Clock/" target="_blank">
+                        <div class="card h-100 mb-3">
+                            <div class="image-box">
+                                <img src="./projects/day2.png" class="card-img-top"
+                                    alt="272 rainbow-colored steps of Batu Caves">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Day 2: JS & CSS Clock</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
