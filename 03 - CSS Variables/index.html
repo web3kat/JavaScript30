@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scoped CSS Variables and JS</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+    <header>
+        <h1>Update CSS Variables with <span class='hl'>JS</span></h1>
+    </header>
+
+    <main>
+        <div class="controls">
+            <label for="spacing">Spacing:</label>
+            <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+            <label for="blur">Blur:</label>
+            <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+            <label for="base">Base Color</label>
+            <input id="base" type="color" name="base" value="#DAA520">
+        </div>
+
+        <img src="maasaigiraffes.webp" width="45%" height="auto">
+    </main>
+
+    <footer>
+        Made by Kat | <a href="https://github.com/katmohd" target="_blank">GitHub</a> | <a
+            href="https://www.linkedin.com/in/katmohd/" target="_blank">LinkedIn</a> | <a
+            href="https://katmohd.github.io/JavaScript30/">Back to main page</a>
+    </footer>
+
+    <style>
+        :root {
+            --base: #DAA520;
+            --spacing: 10px;
+            --blur: 10px;
+        }
+
+        img {
+            padding: var(--spacing);
+            background: var(--base);
+            filter: blur(var(--blur));
+        }
+
+        .hl {
+            color: var(--base);
+        }
+
+        /*
+      misc styles, nothing to do with CSS variables
+    */
+
+        body {
+            background: linear-gradient(109.6deg, rgb(174, 191, 209) 11.2%, rgb(208, 214, 222) 47.5%, rgb(169, 132, 71) 100.2%);
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 100;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .controls {
+            margin-bottom: 50px;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        footer {
+            bottom: 0;
+            font-size: smaller;
+            margin: 20px 0 0 0;
+        }
+
+        footer a {
+            color: #000000;
+        }
+
+        footer a:hover {
+            color: var(--base);
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        const inputs = document.querySelectorAll('.controls input');
+
+        function handleUpdate() {
+            const suffix = this.dataset.sizing || '';
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+        }
+
+        inputs.forEach(input => input.addEventListener('change', handleUpdate));
+        inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    </script>
+
+</body>
+
+</html>
