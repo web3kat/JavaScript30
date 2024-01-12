@@ -2,54 +2,51 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kat's Days of Code Challenge 2024 Portfolio</title>
+    <title></title>
     <style>
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #ffffff;
+            --accent-color: #DAA520;
+        }
+
         body {
-            background: linear-gradient(89.9deg, rgb(208, 246, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%);
-            color: #000000;
+            background: var(--primary-color);
+            color: var(--secondary-color);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: 100;
             min-height: 100vh;
             text-align: center;
         }
 
-        h1 {
-            font-size: xx-large;
-        }
-
-        h2 {
-            font-size: x-large;
-        }
-
-        h3 {
-            font-size: larger;
-        }
-
-        p {
-            margin: 0;
+        main {
+            display: grid;
+            padding: 50px 20px;
         }
 
         a {
-            color: #DAA520;
+            color: var(--accent-color);
             font-weight: bold;
             text-decoration: none;
         }
 
         a:hover {
-            color: #000000;
+            color: var(--secondary-color);
         }
 
-        header {
-            padding: 20px;
-        }
-
-        main {
+        .project-container {
+            align-self: center;
             display: flex;
-            padding: 50px 20px;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            justify-self: center;
+            width: 100%;
+        }
+
+        .project-item {
+            padding: 1% 0.5%;
+            width: 32%;
         }
 
         .card {
@@ -58,7 +55,8 @@
             -ms-transition: all 0.2s ease-in;
             -o-transition: all 0.2s ease-in;
             border-radius: 5px;
-            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+            box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.40);
+            height: 100%;
             transition: all 0.2s ease-in;
         }
 
@@ -67,13 +65,14 @@
             -moz-transition: all 0.2s ease-in;
             -ms-transition: all 0.2s ease-in;
             -o-transition: all 0.2s ease-in;
-            box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+            box-shadow: 0px 15px 26px rgba(255, 255, 255, 0.5);
             transition: all 0.2s ease-in;
         }
 
         .card .image-box {
             border-radius: 5px;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+            box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.5);
+            margin: 0;
             overflow: hidden;
         }
 
@@ -82,6 +81,8 @@
             -moz-transition: all .9s ease;
             -o-transition: all .9s ease;
             -ms-transition: all .9s ease;
+            border-radius: 5px;
+            vertical-align: middle;
         }
 
         .card:hover .image-box img {
@@ -92,16 +93,22 @@
             transform: scale(1.2);
         }
 
-        .card-body {
-            border-radius: 5px;
-            padding: 10px 20px;
-        }
-
         footer {
             align-self: end;
             font-size: 10px;
             padding: 10px;
-            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .project-item {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -113,56 +120,52 @@
     </header>
 
     <main>
-        <div id="project-container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-
-                    <div class="card h-100 mb-3">
-                        <div class="image-box">
-                            <img src="./projects/day1.webp" class="card-img-top" alt="JavaScript Drum Kit">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Day 1: JS Drum Kit</h3>
-                            <p>
-                                <a href="./01 - JavaScript Drum Kit/" target="_blank">Demo</a> | <a
-                                    href="https://github.com/katmohd/JavaScript30/tree/main/01%20-%20JavaScript%20Drum%20Kit"
-                                    target="_blank">Repository
-                                </a>
-                            </p>
-                        </div>
+        <div class="project-container">
+            <div class="project-item">
+                <div class="card">
+                    <div class="image-box">
+                        <img src="./images/day1.webp" class="card-img-top" width="100%" height="auto"
+                            alt="JavaScript Drum Kit">
                     </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <div class="card h-100 mb-3">
-                        <div class="image-box">
-                            <img src="./projects/day2.webp" class="card-img-top" alt="JS and CSS Clock">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Day 2: JS & CSS Clock</h3>
-                            <p>
-                                <a href="./02 - JS and CSS Clock/" target="_blank">Demo</a> | <a
-                                    href="https://github.com/katmohd/JavaScript30/tree/main/02%20-%20JS%20and%20CSS%20Clock"
-                                    target="_blank">Repository
-                                </a>
-                            </p>
-                        </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Day 1: JavaScript Drum Kit</h3>
+                        <p class="card-text"><a href="./01 - JavaScript Drum Kit/" target="_blank">Demo</a> | <a
+                                href="https://github.com/katmohd/JavaScript30/tree/main/01%20-%20JavaScript%20Drum%20Kit"
+                                target="_blank">Repo</a></p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 mb-3">
-                        <div class="image-box">
-                            <img src="./projects/day3.webp" class="card-img-top" alt="CSS Variables">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Day 3: CSS Variables</h3>
-                            <p>
-                                <a href="./03 - CSS Variables/" target="_blank">Demo</a> | <a
-                                    href="https://github.com/katmohd/JavaScript30/tree/main/03%20-%20CSS%20Variables"
-                                    target="_blank">Repository
-                                </a>
-                            </p>
-                        </div>
+            </div>
+            <div class="project-item">
+                <div class="card">
+                    <div class="image-box">
+                        <img src="./images/day2.webp" class="card-img-top" width="100%" height="auto"
+                            alt="JS and CSS Clock">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">JS and CSS Clock</h3>
+                        <p class="card-text">
+                            <a href="./02 - JS and CSS Clock/" target="_blank">Demo</a> | <a
+                                href="https://github.com/katmohd/JavaScript30/tree/main/02%20-%20JS%20and%20CSS%20Clock"
+                                target="_blank">Repo
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="card">
+                    <div class="image-box">
+                        <img src="./images/day3.webp" class="card-img-top" width="100%" height="auto"
+                            alt="CSS Variables">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">CSS Variables</h3>
+                        <p class="card-text">
+                            <a href="./03 - CSS Variables/" target="_blank">Demo</a> | <a
+                                href="https://github.com/katmohd/JavaScript30/tree/main/03%20-%20CSS%20Variables"
+                                target="_blank">Repo
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -172,7 +175,7 @@
     <footer>
         Made by Kat | <a href="https://github.com/katmohd" target="_blank">GitHub</a> | <a
             href="https://www.linkedin.com/in/katmohd/" target="_blank">LinkedIn</a> | <a
-            href="https://github.com/katmohd/JavaScript30">Repository</a>
+            href="https://github.com/katmohd/JavaScript30">Main Repository</a>
     </footer>
 
 </body>
