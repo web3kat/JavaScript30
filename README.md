@@ -8,3 +8,4 @@
  Day 3: [CSS Variables](https://katmohd.github.io/JavaScript30/03%20-%20CSS%20Variables/) <br />
  Day 4: [Array Cardio Day 1](https://katmohd.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201) <br />
  Day 5: [Flex Panel Gallery](https://katmohd.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/) <br />
+ Day 6: [Type Ahead](https://katmohd.github.io/JavaScript30/06%20-%20Type%20Ahead/) <br />
