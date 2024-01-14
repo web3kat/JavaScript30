@@ -1,8 +1,13 @@
 # JavaScript30
  30 Day Vanilla JS for Women Who Code's Days of Code Challenge 2024
 
- View my portfolio page for this challenge [here](https://katmohd.github.io/JavaScript30/)
+ [View my portfolio for this challenge](https://katmohd.github.io/JavaScript30/)
 
+ Want my portfolio templates? <br />
+ Light mode: [Demo](https://katmohd.github.io/JavaScript30/portfoliotemplatelight.html) | [Repo](https://github.com/katmohd/JavaScript30/blob/main/portfoliotemplatelight.html) <br />
+ Dark mode: [Demo](https://katmohd.github.io/JavaScript30/portfoliotemplatedark.html) | [Repo](https://github.com/katmohd/JavaScript30/blob/main/portfoliotemplatedark.html) <br />
+ 
+ Projects listed in the portfolio: <br />
  Day 1: [JavaScript Drum Kit](https://katmohd.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/) <br /> 
  Day 2: [JS and CSS Clock](https://katmohd.github.io/JavaScript30/02%20-%20JS%20and%20CSS%20Clock/) <br />
  Day 3: [CSS Variables](https://katmohd.github.io/JavaScript30/03%20-%20CSS%20Variables/) <br />
