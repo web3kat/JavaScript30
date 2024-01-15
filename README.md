@@ -4,7 +4,7 @@
  [View my portfolio for this challenge](https://katmohd.github.io/JavaScript30/)
 
  Want my portfolio template? <br />
- [Demo](https://katmohd.github.io/JavaScript30/portfoliotemplate.html) | [Repo](https://github.com/katmohd/JavaScript30/blob/main/portfoliotemplate.html)
+ [Demo](https://katmohd.github.io/Portfolio-Template/) | [Repo](https://github.com/katmohd/Portfolio-Template)
 
  Projects listed in the portfolio: <br />
  Day 1: [JavaScript Drum Kit](https://katmohd.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/) <br /> 
