@@ -9,14 +9,19 @@
     <title>Kat's Portfolio for Days of Code Challenge 2024</title>
     <style>
         :root {
-            --primary-color: #000000;
-            --secondary-color: #ffffff;
-            --accent-color: #DAA520;
+            --main-theme-primary-color: #000000;
+            --main-theme-secondary-color: #ffffff;
+            --main-theme-accent-color: #DAA520;
+            --main-theme-box-shadow-color: rgba(255, 255, 255, 0.5);
+            --alternate-theme-primary-color: #ffffff;
+            --alternate-theme-secondary-color: #000000;
+            --alternate-theme-accent-color: #ff0000;
+            --alternate-theme-box-shadow-color: rgba(0, 0, 0, 0.5);
         }
 
         body {
-            background: var(--primary-color);
-            color: var(--secondary-color);
+            background: var(--main-theme-primary-color);
+            color: var(--main-theme-secondary-color);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             min-height: 100vh;
@@ -28,10 +33,10 @@
         }
 
         .themeButton {
-            background: var(--accent-color);
-            border: 1px solid var(--secondary-color);
+            background: var(--main-theme-accent-color);
+            border: 1px solid var(--main-theme-secondary-color);
             border-radius: 16px;
-            color: var(--secondary-color);
+            color: var(--main-theme-secondary-color);
             cursor: pointer;
             display: block;
             font-size: 10px;
@@ -42,41 +47,8 @@
         }
 
         .themeButton:hover {
-            background: var(--secondary-color);
-            color: var(--primary-color);
-        }
-
-        .dark {
-            background: var(--secondary-color);
-            color: var(--primary-color);
-
-            a:hover {
-                color: var(--primary-color);
-            }
-
-            .card {
-                box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-            }
-
-            .card:hover {
-                box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
-            }
-
-            .card .image-box {
-                box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-            }
-        }
-
-        .dark .themeButton {
-            border: 1px solid var(--primary-color);
-            color: var(--primary-color);
-            cursor: pointer;
-            transition: 150ms ease-in-out;
-        }
-
-        .dark .themeButton:hover {
-            background: var(--primary-color);
-            color: var(--secondary-color);
+            background: var(--main-theme-secondary-color);
+            color: var(--main-theme-primary-color);
         }
 
         main {
@@ -84,13 +56,13 @@
         }
 
         a {
-            color: var(--accent-color);
+            color: var(--main-theme-accent-color);
             font-weight: bold;
             text-decoration: underline;
         }
 
         a:hover {
-            color: var(--secondary-color);
+            color: var(--main-theme-secondary-color);
             text-decoration: none;
         }
 
@@ -112,7 +84,8 @@
             -ms-transition: all 0.2s ease-in;
             -o-transition: all 0.2s ease-in;
             border-radius: 5px;
-            box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.40);
+            box-shadow: 0px 3px 4px var(--main-theme-box-shadow-color);
+            display: grid;
             height: 100%;
             transition: all 0.2s ease-in;
             width: 100%;
@@ -123,13 +96,15 @@
             -moz-transition: all 0.2s ease-in;
             -ms-transition: all 0.2s ease-in;
             -o-transition: all 0.2s ease-in;
-            box-shadow: 0px 15px 26px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 15px 26px var(--main-theme-box-shadow-color);
             transition: all 0.2s ease-in;
         }
 
         .card .image-box {
+            align-self: center;
             border-radius: 5px;
-            box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 2px 15px var(--main-theme-box-shadow-color);
+            justify-self: center;
             margin: 0;
             overflow: hidden;
         }
@@ -152,7 +127,47 @@
         }
 
         .card .card-body {
+            align-self: center;
+            justify-self: center;
             padding: 10px;
+        }
+
+        .alternate {
+            background: var(--alternate-theme-primary-color);
+            color: var(--alternate-theme-secondary-color);
+
+            a {
+                color: var(--alternate-theme-accent-color);
+            }
+
+            a:hover {
+                color: var(--alternate-theme-secondary-color);
+            }
+
+            .card {
+                box-shadow: 0px 3px 4px var(--alternate-theme-box-shadow-color);
+            }
+
+            .card:hover {
+                box-shadow: 0px 15px 26px var(--alternate-theme-box-shadow-color);
+            }
+
+            .card .image-box {
+                box-shadow: 0px 2px 15px var(--alternate-theme-box-shadow-color);
+            }
+        }
+
+        .alternate .themeButton {
+            background: var(--alternate-theme-accent-color);
+            border: 1px solid var(--alternate-theme-secondary-color);
+            color: var(--alternate-theme-secondary-color);
+            cursor: pointer;
+            transition: 150ms ease-in-out;
+        }
+
+        .alternate .themeButton:hover {
+            background: var(--alternate-theme-secondary-color);
+            color: var(--alternate-theme-primary-color);
         }
 
         footer {
@@ -234,10 +249,6 @@
             </div>
             <div class="project-item">
                 <div class="card">
-                    <div class="image-box">
-                        <img src="./images/day4.webp" alt="Array Cardio Day 1" class="card-img-top" width="100%"
-                            height="100%">
-                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Day 4: Array Cardio Day 1</h3>
                         <p class="card-text">
@@ -282,6 +293,19 @@
                     </div>
                 </div>
             </div>
+            <div class="project-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Day 7: Array Cardio Day 2</h3>
+                        <p class="card-text">
+                            <a href="./07 - Array Cardio Day 2/" target="_blank">Demo</a> | <a
+                                href="https://github.com/katmohd/JavaScript30/tree/main/07%20-%20Array%20Cardio%20Day%202"
+                                target="_blank">Repo
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -295,10 +319,10 @@
         function changeTheme() {
             let body = document.querySelector("body");
 
-            if (body.classList.contains("dark")) {
-                body.classList.remove("dark");
+            if (body.classList.contains("alternate")) {
+                body.classList.remove("alternate");
             } else {
-                body.classList.add("dark");
+                body.classList.add("alternate");
             }
         }
 
