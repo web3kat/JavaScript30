@@ -14,3 +14,4 @@
  Day 5: [Flex Panel Gallery](https://katmohd.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/) <br />
  Day 6: [Type Ahead](https://katmohd.github.io/JavaScript30/06%20-%20Type%20Ahead/) <br />
  Day 7: [Array Cardio Day 2](https://katmohd.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/) <br />
+ Day 8: [Fun with HTML5 Canvas](https://katmohd.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/) <br />
