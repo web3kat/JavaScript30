@@ -29,10 +29,6 @@ body {
     position: relative;
 }
 
-.player.fullscreen .player__controls .toggle.fullscreen::before {
-    content: "\f066";
-}
-
 /* This css is only applied when fullscreen is active. */
 .player:fullscreen {
     max-width: none;
