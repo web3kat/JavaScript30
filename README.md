@@ -18,3 +18,4 @@
  Day 9: [Dev Tools Domination](https://katmohd.github.io/JavaScript30/09%20-%20Dev%20Tools%20Domination/) <br />
  Day 10: [Hold Shift and Check Checkboxes](https://katmohd.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/) <br />
  Day 11: [Custom Video Player](https://katmohd.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/) <br />
+ Day 12: [Key Sequence Detection](https://katmohd.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/) <br />
