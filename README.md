@@ -20,3 +20,4 @@
  Day 11: [Custom Video Player](https://katmohd.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/) <br />
  Day 12: [Key Sequence Detection](https://katmohd.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/) <br />
  Day 13: [Slide in on Scroll](https://katmohd.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/) <br />
+ Day 14: [JavaScript References VS Copying](https://katmohd.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/) <br />
