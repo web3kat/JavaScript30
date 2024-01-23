@@ -21,3 +21,4 @@
  Day 12: [Key Sequence Detection](https://thewebkat.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/) <br />
  Day 13: [Slide in on Scroll](https://thewebkat.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/) <br />
  Day 14: [JavaScript References VS Copying](https://thewebkat.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/) <br />
+ Day 15: [LocalStorage](https://thewebkat.github.io/JavaScript30/15%20-%20LocalStorage/) <br />
