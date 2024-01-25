@@ -23,3 +23,4 @@
  Day 14: [JavaScript References VS Copying](https://web3kat.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/) <br />
  Day 15: [LocalStorage](https://web3kat.github.io/JavaScript30/15%20-%20LocalStorage/) <br />
  Day 16: [Mouse Move Shadow](https://web3kat.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/) <br />
+ Day 17: [Sort Without Articles](https://web3kat.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/) <br />
