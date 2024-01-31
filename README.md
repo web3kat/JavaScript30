@@ -26,3 +26,14 @@
  Day 17: [Sort Without Articles](https://web3kat.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/) <br />
  Day 18: [Adding Up Times with Reduce](https://web3kat.github.io/JavaScript30/18%20-%20Adding%20Up%20Times%20with%20Reduce/) <br />
  Day 19: [Webcam Fun](https://web3kat.github.io/JavaScript30/19%20-%20Webcam%20Fun/) <br />
+ Day 20: [Speech Detection](https://web3kat.github.io/JavaScript30/20%20-%20Speech%20Detection/) <br />
+ Day 21: [Geolocation](https://web3kat.github.io/JavaScript30/21%20-%20Geolocation/) <br />
+ Day 22: [Follow Along Link Highlighter](https://web3kat.github.io/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter/) <br />
+ Day 23: [Speech Synthesis](https://web3kat.github.io/JavaScript30/23%20-%20Speech%20Synthesis/) <br />
+ Day 24: [Sticky Nav](https://web3kat.github.io/JavaScript30/24%20-%20Sticky%20Nav/) <br />
+ Day 25: [Event Capture, Propagation, Bubbling and Once](https://web3kat.github.io/JavaScript30/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/) <br />
+ Day 26: [Stripe Follow Along Nav](https://web3kat.github.io/JavaScript30/26%20-%20Stripe%20Follow%20Along%20Nav/) <br />
+ Day 27: [Click and Drag](https://web3kat.github.io/JavaScript30/27%20-%20Click%20and%20Drag/) <br />
+ Day 28: [Video Speed Controller](https://web3kat.github.io/JavaScript30/28%20-%20Video%20Speed%20Controller/) <br />
+ Day 29: [Countdown Timer](https://web3kat.github.io/JavaScript30/29%20-%20Countdown%20Timer/) <br />
+ Day 30: [Whack A Mole](https://web3kat.github.io/JavaScript30/30%20-%20Whack%20A%20Mole/) <br />
